@@ -1,10 +1,11 @@
+import BaseLayout from "./Containers/BaseLayout"
 
-
-function App() {
+const App = () => {
 
 
   return (
     <>
+    <BaseLayout />
 
     </>
   )
