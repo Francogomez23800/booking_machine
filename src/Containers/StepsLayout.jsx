@@ -7,8 +7,8 @@ import { Nav } from '../Components/Nav';
 const StepsLayout = ({state, send}) => {
   function renderContent(){
     if(state.matches('initial')) return<Welcome send={send}/>
-    if(state.matches('search')) return<Search send={send}/>
-    if(state.matches('tickets')) return<Tickets send={send}/>
+    if(state.matches('search')) return<Search state={state} send={send}/>
+    if(state.matches('tickets')) return<Tickets state={state} send={send}/>
     if(state.matches('passengers')) return<Passengers state={state} send={send}/>
     
   }
